@@ -26,7 +26,7 @@ function dateFilter(date, format)
     var obj;
     Array.prototype.push.apply(args, arguments);
     try {
-        obj = moment.utc(date);
+        obj = moment(date);
     } catch (err) {
         errs.push(err);
     }
